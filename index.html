@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDGKSRIET</title>
+  <link rel="icon" href="./assests/favicon.ico" type="image/x-icon">
+    <!-- Optional: You can also provide a PNG version of your favicon for better compatibility -->
+  <link rel="shortcut icon" href="./assests/wow logo.png" type="image/png">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body class="grid-bg h-screen text-white" style="background-color: #151719;">
+
+  <!-- Navigation Bar -->
+  <header class="header flex items-center justify-between fixed w-full p-6 backdrop-filter backdrop-blur-lg bg-opacity-10 bg-black border-b border-white z-50">
+    <a href="#" class="logo"><img class="h-14 w-14" src="Hack with_20241018_093032_0000.png" alt="Logo"></a>
+    <nav class="navbar hidden md:flex space-x-4">
+      <!-- Add your nav links here -->
+    </nav>
+    <button class="btn bg-black text-white py-1.5 px-3 text-sm rounded"><a href="https://konfhub.com/gdsc-wow-tn" target="_blank">Register</a></button>
+  </header>
+  <div class="nav-bg"></div>
+
+  <!-- Main Content -->
+  <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-10">
+    <div class="w-full md:w-1/2 text-center md:text-left mt-10">
+      <h1 class="text-4xl md:text-6xl mb-4">HACK WITH GDG SEASON 2</h1>
+      <h3 class="text-2xl md:text-3xl mb-4">A 24 Hours Hackathon!
+      <span class="font-bold" style="color: #f9ab00;"> { November 7 }</span></h3>
+      <p class="text-lg mb-6">Welcome to GDG KSRIET Student Chapter! A Day to show case your coding skills and Technical skills!</p>
+      <button class="btn-register"><a href="" target="_blank" >Register</a></button>
+    </div>
+    <div class="w-full md:w-1/2 flex justify-center md:justify-start mt-10">
+      <img src="Hack with_20241018_093032_0000.png" alt="Event Image" class="h-120 w-120 md:h-150 md:w-150 mb-4 md:mb-0">
+    </div>
+  </div>  
+
+  <!-- Countdown Section -->
+  <section class="countdown-section mb-6">
+    <div class="wrapper">
+      <h1 class="text-center text-4xl my-10">Event Starts in</h1>
+      <div class="countdown grid grid-cols-2 gap-8 sm:grid-cols-4">
+        <div class="box">
+          <span class="num" id="day-box">00</span>
+          <span class="text">Days</span>
+        </div>
+        <div class="box">
+          <span class="num" id="hr-box">00</span>
+          <span class="text">Hours</span>
+        </div>
+        <div class="box">
+          <span class="num" id="min-box">00</span>
+          <span class="text mx-4">Minutes</span>
+        </div>
+        <div class="box">
+          <span class="num" id="sec-box">00</span>
+          <span class="text">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section mt-6">
+    <div class="container mx-auto flex flex-col-reverse md:flex-row items-center justify-center h-full px-10">
+      <div class="w-full md:w-1/2 text-center md:text-left">
+        <h2 class="text-4xl md:text-6xl mb-4">About Hack With GDG S2</h2>
+        <p class="text-lg mb-6">Hey!! Devs, Here's season 2 of Hack with GDG KSRIET student chapter. Hack with GDG is where all the developers and web2 enthusiasts join us in the 24 Hours Hackathon with more quests and events along. Isn't it a great opportunity for networking with others!!?</p>
+      </div>
+     
+      <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+        <img src="gdgmain.png" alt="About Image" class="h-120 w-120 md:h-120 mx-8 md:w-120 md:mb-0 about-img"> <!-- Use h-60 and w-60 for mobile view -->
+      </div>
+    </div>
+  </section>
+
+
+  <section class="agenda-section mt-6">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Agenda</h2>
+      <div class="slider-wrapper relative">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list flex overflow-x-auto">
+          <!-- Add your agenda items here -->
+          <li class="image-item bg-red-400 p-6 flex-none">
+            <p class="text-2xl font-bold">8:30 - 9:30 AM</p>
+            <h3 class="mt-2">Registration</h3>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">9:30 – 10:00 AM</p>
+            <h3 class="mt-2">Opening Keynote</h3>
+          </li>
+
+          <li class="image-item bg-blue-400 p-6 flex-none">
+            <p class="text-2xl font-bold">10:00 - 10:45 AM</p>
+            <p class="mt-2">What Is Other Than AI: The Future of Technical Careers</p>
+          </li>
+
+          <li class="image-item bg-yellow-400 p-6 flex-none">
+            <p class="text-2xl font-bold">10:45 - 11:15 AM</p>
+            <p class="mt-2"> Refreshment Break</p>
+          </li>
+
+          <li class="image-item bg-red-400 p-6 flex-none">
+            <p class="text-2xl font-bold">11:15 – 12:00 PM</p>
+            <p class="mt-2">What Is Other Than Technical: Diverse Roles in the Tech Industry</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">12:00 – 12:45 PM</p>
+            <p class="mt-2">Talk on Higher Education</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">12:45 – 1:45 PM</p>
+            <p class="mt-2">Networking Lunch</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">1:45 – 2:30 PM</p>
+            <p class="mt-2">Blueprints for Brilliance</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">2:30 – 3:30 PM</p>
+            <p class="mt-2">Knocking on Internship Doors: Essential Tips, Application Strategies,
+              and Resume Insights:</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">3:30 – 4:30 PM</p>
+            <p class="mt-2">Panel Discussion: Mapping Your Career Path in a Tech-Driven World</p>
+          </li>
+
+          <li class="image-item bg-green-400 p-6 flex-none">
+            <p class="text-2xl font-bold">4:30 – 5:30 PM</p>
+            <p class="mt-2">Wrap up & Networking</p>
+          </li>
+          
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Speaker Section  -->
+
+  <section class="sponsor-section mt-6 mb-8">
+    <div class="container mx-auto">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Core Team</h2>
+      <div class="slide-wrapper relative">
+        <button id="prev-slid" class="slid-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list flex overflow-x-auto">
+          <!-- Add your agenda items here -->
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a href="https://www.linkedin.com/in/vikash-t-designer?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="gdgoncampusorgnizer.jpeg" alt="Vikash Thirumurugan" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Vikash Thirumurugan</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a href="https://www.linkedin.com/in/kavin-raj-602802257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="managementgdg.jpeg" alt="Kavinraj" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Kavinraj</h1>
+          </li>
+          
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a href="https://www.linkedin.com/in/tharun-s-b5521228a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="technicallead.jpeg" alt="Tharun" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Tharun</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <a href="https://www.linkedin.com/in/rathish-kumar-62a8a1255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="nontechnicallead.jpeg" alt="Rathishkumar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Rathish</h1>
+          </li>
+
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/chandrapradeep-r-017033291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="webdevelopmentteamlead.jpeg" alt="Chandrapradeep" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Chandrapradeep</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/gowrishankar-m-n-892b87257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="appdevelopmentteamlead.jpeg" alt="Gowrishankar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Gowrishankar</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/pooja-n-87799b28b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="competitiveprogramminglead.jpeg" alt="pooja" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Pooja</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/divyadharshini-bharaniraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="aimlteamlead'.jpeg" alt="divyadharshini" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Divyadharshini</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/dhanushkumar-m-6184a328b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="cybersecuritylead.jpeg" alt="DhanushKumar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">DhanushKumar</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/yugesh-saravanan-7985b8290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="UIUXteamlead.jpeg" alt="Yugesh" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Yugesh</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://www.linkedin.com/in/kishore-kumar-298658258?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="Graphicdesignlead.jpeg" alt="Kishore kumar" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">kishore Kumar</h1>
+          </li>
+          <li class="image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">  
+            <a href="https://in.linkedin.com/in/boopesh-m-97b72328b"><img src="multimeaditeamlead.jpeg" alt="Boopesh" class="spk my-6 rounded-full"></a>
+            <h1 class="text-lg font-semibold">Boopesh</h1>
+          </li>
+          
+        </ul>
+        <button id="next-slid" class="slid-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slide-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Duplicated Speakers Section -->
+<section class="duplicated-sponsor-section mt-6 mb-8">
+  <div class="container mx-auto">
+    <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Sponsors</h2>
+    <div class="duplicated-slide-wrapper relative">
+      <button id="prev-duplicated-slid" class="duplicated-slid-button material-symbols-rounded">
+        chevron_left
+      </button>
+      <ul class="duplicated-image-list flex overflow-x-auto">
+        <!-- Add your duplicated agenda items here -->
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://kovanlabs.com/" target="_blank"><img src="./assests/sponsor/kovan.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://www.goaugment.io/" target="_blank"><img src="./assests/sponsor/Agunment.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://konfhub.com/" target="_blank"><img src="./assests/sponsor/konfhub.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+        
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://fiche.in/" target="_blank"><img src="./assests/sponsor/fiche.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+            <h1 class="text-3xl font-bold text-center mt-5">COMMUNITY PARTNERS</h1> 
+            <i class='bx bx-right-arrow-alt text-6xl mt-6'></i>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://gdg.community.dev/gdg-coimbatore/" target="_blank"><img src="./assests/sponsor/gdg-cbe.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://aitamilnadu.org/" target="_blank"><img src="./assests/sponsor/ai-tn.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://www.meetup.com/tfugcbe/" target="_blank"><img src="./assests/sponsor/tf-cbe.jpg" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://www.meetup.com/tfugchennai/" target="_blank"><img src="./assests/sponsor/tf-chen.jpg" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://kgx.nivu.me/" target="_blank"><img src="./assests/sponsor/ksx.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+        <li class="duplicated-image-item p-6 flex flex-col items-center space-y-2 bg-white rounded-lg shadow-lg">
+          <a href="https://www.meetup.com/coimbatore-javascript-group/" target="_blank"><img src="./assests/sponsor/js.png" alt="Duplicated Speaker 1" class="h-24 w-30 my-6 rounded-xl"></a>
+        </li>
+
+      </ul>
+      <button id="next-duplicated-slid" class="duplicated-slid-button material-symbols-rounded">
+        chevron_right
+      </button>
+    </div>
+    <div class="duplicated-slide-scrollbar">
+      <div class="duplicated-scrollbar-track">
+        <div class="duplicated-scrollbar-thumb"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section class="faq-section my-10">
+    <div class="container mx-auto ">
+      <h2 class="text-4xl md:text-6xl mb-8 text-center text-white">Frequently Asked Questions</h2>
+      <div class="faq-item">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What is GDSC WOW?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4  text-white rounded">
+          <p>GDSC WOW is an annual collaborative event organized by Google Developer Student Clubs (GDSC) across Tamilnadu. It serves as a platform for students, professionals, and tech enthusiasts to connect, learn, and explore the future of technology.</p>
+        </div>
+      </div>
+      <div class="faq-item mt-4">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left  text-white rounded">
+          <span>How can I register for the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 bg-black text-white rounded">
+          <p>You can register for the event by clicking on the "Register" button on our website. Ensure you secure your spot early as tickets are limited and available on a first-come, first-served basis.</p>
+        </div>
+      </div>
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Who can attend the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The event is open to anyone interested in technology, including students, professionals, and industry leaders. Whether you're a tech novice or an expert, there's something for everyone.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What is the ticket pricing structure?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>
+            We offer three types of tickets:
+            <ul>
+              <li>Super Early Bird: ₹99</li>
+              <li>Early Bird: ₹149</li>
+              <li>Regular: ₹199</li>
+            </ul>
+            Tickets are limited to 100 for each category, so book early to avail the best rates.
+          </p>
+          <p>
+            Where is the event being held?
+            <br>
+            The event will be held at Dr. GR Damodaran College of Science in Coimbatore. Full address and venue details will be provided in your registration confirmation email and on our website.
+          </p>
+          
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Where is the event being held?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The event will be held at Dr. GR Damodaran College of Science in Coimbatore. Full address and venue details will be provided in your registration confirmation email and on our website.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What topics will be covered at the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>The event will focus on a variety of topics, including Artificial Intelligence, emerging tech trends, higher education, internships, and diverse roles in the tech industry. Detailed agenda is available on the website.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Will there be networking opportunities?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Yes, there will be multiple networking sessions, including a dedicated networking lunch where you can connect with other attendees, speakers, and industry leaders.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>How can I become a sponsor or community partner for the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>We welcome sponsorships and community partnerships. Please reach out to us at gdscwowtamilnadu@gmail.com for more details on how you can get involved and support the event.</p>
+        </div>
+      </div>
+
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>Are there volunteer opportunities available?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Yes, we are looking for enthusiastic volunteers to help with event operations. If you are interested in volunteering, please contact us at gdscwowtamilnadu@gmail.com.</p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>What is the refund policy for tickets?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Unfortunately, tickets are non-refundable. However, you may transfer your ticket to another person if you are unable to attend. Please contact us in advance to arrange the transfer.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item mt-4 ">
+        <button class="faq-question flex justify-between items-center p-4 w-full text-left text-white rounded">
+          <span>How can I stay updated about the event?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer hidden p-4 text-white rounded">
+          <p>Follow us on our social media channels (Facebook, Twitter, Instagram) for the latest updates and announcements. You can also subscribe to our newsletter through the website.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+
+  
+  <footer>
+    <div class="footer-container">
+      <div class="map-section">
+        <!-- Embed your map here -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.6737504126613!2d77.82913857486587!3d11.358523288827818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba964017038dfe3%3A0xd5a68d71e9c1aec7!2sK%20S%20R%20Institute%20For%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1729245172452!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="details-section">
+        <h1>Google Developer Student Clubs</h1>
+        <p>Email: <a href="mailto:vikashuvi07@gmail.com">vikashuvi07@gmail.com</a></p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/company/gdg-ksriet24/" target="_blank" aria-label="LinkedIn" class="text-blue-700 text-3xl">
+            <i class='bx bxl-linkedin'></i>
+        </a>
+        <a href="mailto:vikashuvi07@gmail.com" target="_blank" aria-label="Gmail" class="text-red-600 text-3xl">
+            <i class='bx bxl-gmail'></i>
+        </a>
+        <a href="https://www.instagram.com/gdg_ksriet/profilecard/?igsh=OXZ4YnlzMjU1NHp2" target="_blank" aria-label="Instagram" class="text-pink-600 text-3xl">
+            <i class='bx bxl-instagram'></i>
+        </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
